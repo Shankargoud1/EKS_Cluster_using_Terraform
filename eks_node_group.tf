@@ -1,6 +1,6 @@
 resource "aws_instance" "kubectl-server" {
-  ami                         = "ami-063e1495af50e6fd5"
-  key_name                    = "ubuntusingapore"
+  ami                         = "ami-0d52744d6551d851e"
+  key_name                    = "shankar-key"
   instance_type               = "t2.micro"
   associate_public_ip_address = true
   subnet_id                   = aws_subnet.public-1.id
