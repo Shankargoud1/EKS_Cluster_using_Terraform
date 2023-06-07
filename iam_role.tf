@@ -33,7 +33,7 @@ resource "aws_iam_role_policy_attachment" "AmazonEKSVPCResourceController" {
 }
 
 resource "aws_iam_role" "worker" {
-  name = "ed-eks-worker"
+  name = "ed-eks-worker-1"
 
   assume_role_policy = <<POLICY
 {
@@ -52,7 +52,7 @@ POLICY
 }
 
 resource "aws_iam_policy" "autoscaler" {
-  name   = "ed-eks-autoscaler-policy"
+  name   = "ed-eks-autoscaler-policy-1"
   policy = <<EOF
 {
   "Version": "2012-10-17",
